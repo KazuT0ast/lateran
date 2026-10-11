@@ -6,7 +6,7 @@ export default function Home() {
     <section className="w-full min-h-screen flex flex-col">
       <TopHeader />
       <main className="flex-1 p-8 flex items-center justify-center">
-        <p className="text-2xl">Hello!</p>
+        <h1 className="text-4xl">Lateran</h1>
       </main>
     </section>
   );

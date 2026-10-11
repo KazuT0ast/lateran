@@ -20,7 +20,7 @@ export function ThemeToggle() {
         <section>
             {/* Default is dark, if click, set it to light, click again set it to dark */}
             <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="px-4 py-2 rounded-xl text-sm dark:bg-zinc-900 border-1 dark:border-amber-50/10"
+                className="px-4 py-2 rounded-xl text-sm dark:bg-zinc-900 border dark:border-amber-50/10"
 
             >
                 {theme === "light" ? "☀️ Light" : "🌙 Dark"}

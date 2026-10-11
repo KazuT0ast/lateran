@@ -30,4 +30,14 @@ body {
 /* Global dark and light mode change, so i dont have to add fields for each element */
 body {
   @apply text-zinc-900 bg-zinc-50 dark:text-zinc-100 dark:bg-zinc-900;
+
+  background-color: #fdfbf7;
+  background-image: radial-gradient(#d4d4d8 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Dark mode background */
+.dark body {
+  background-color: #18181b;
+  background-image: radial-gradient(#3f3f46 1px, transparent 1px);
 }
