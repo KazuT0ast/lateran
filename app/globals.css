@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Markdown styling for tailwind */
+@plugin "@tailwindcss/typography";
+
 /* Dark and light specifier (ie: dark:bg-black) */
 @custom-variant dark (&:is(.dark *)); 
 
