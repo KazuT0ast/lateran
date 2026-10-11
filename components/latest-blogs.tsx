@@ -36,12 +36,12 @@ export default async function LatestBlogs() {
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
                 Latest Posts
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="flex flex-col w-1/2">
                 {latest.map((blog) => (
                     <a
                         key={blog.slug}
                         href={`/blog/${blog.slug}`}
-                        className="group block p-6 bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors duration-200"
+                        className="mb-4 group block p-6 bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors duration-200"
                     >
                         <time className="text-sm text-zinc-500 dark:text-zinc-400 mb-2 block">
                             {blog.date}

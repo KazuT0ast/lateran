@@ -7,9 +7,13 @@ export default function Home() {
   return (
     <section className="w-full min-h-screen flex flex-col">
       <TopHeader />
-      {/* <h1 className="text-4xl">Lateran</h1> */}
 
-      <main className="flex-1 flex items-center justify-center p-4">
+      <section className="w-full flex-1 flex flex-col items-center justify-center gap-4">
+        <Image src="/Laterano.webp" alt="Lateran" width={300} height={300} />
+        <h1 className="text-4xl">Lateran</h1>
+      </section>
+
+      <main className="flex-1 flex flex-row items-center justify-center p-4">
         {/* <BlogPost slug="my-first-blog" /> */}
         <LatestBlogs />
       </main>
