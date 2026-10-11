@@ -1,18 +1,29 @@
 "use client"
 
 import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 
 export function ThemeToggle() {
     const { theme, setTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
+
+    // Only render the toggle after the component has mounted on the client
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mounted) {
+        return null // Prevents the hydration mismatch flash
+    }
 
     return (
         <section>
             {/* Default is dark, if click, set it to light, click again set it to dark */}
             <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-800"
+                className="px-4 py-2 rounded-md text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
 
             >
-                {theme === "dark" ? "☀️ Light" : "🌙 Dark"}
+                {theme === "light" ? "☀️ Light" : "🌙 Dark"}
             </button>
         </section>
     )
