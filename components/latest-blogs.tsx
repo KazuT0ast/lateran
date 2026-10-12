@@ -33,15 +33,15 @@ export default async function LatestBlogs() {
 
     return (
         <section className="w-full">
-            {/* <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
-                Latest Posts
-            </h2> */}
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl">
+                <div className="px-6 pt-4 pb-2">
+                    <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">RECENT BLOGS</span>
+                </div>
                 {latest.map((blog) => (
                     <a
                         key={blog.slug}
                         href={`/blog/${blog.slug}`}
-                        className="mb-4 group block p-6 bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 dark:hover:border-indigo-400 transition-colors duration-200"
+                        className="group block p-6 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200"
                     >
                         <time className="text-sm text-zinc-500 dark:text-zinc-400 mb-2 block">
                             {blog.date}

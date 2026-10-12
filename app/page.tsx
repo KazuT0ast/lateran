@@ -22,7 +22,7 @@ export default function Home() {
             <LatestBlogs />
           </section>
 
-          <section className="w-1/4 p-10">
+          <section className="w-2/5 p-10">
             <LastFMCard />
           </section>
         </section>

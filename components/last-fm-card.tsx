@@ -37,7 +37,7 @@ export default function LastFMCard() {
 
     return (
         <section className="w-full">
-            <section className="flex flex-col w-full bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
+            <section className="flex flex-col w-full bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 rounded-2xl">
                 <div className="flex items-center justify-between px-6 pt-4 pb-2">
                     <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">RECENT TRACKS</span>
                     <a
@@ -55,7 +55,7 @@ export default function LastFMCard() {
                         href={track.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group block p-6 rounded-2xl hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${index === 0 ? "text-lg border-b dark:border-zinc-800" : "text-sm"
+                        className={`group block p-6 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${index === 0 ? "text-lg border-b dark:border-zinc-800" : "text-sm"
                             }`}
                     >
                         <div className="flex flex-col">
