@@ -7,6 +7,7 @@ interface BlogMeta {
     date: string;
     description: string;
     slug: string;
+    tags: string[];
 }
 
 export default async function LatestBlogs() {
@@ -18,7 +19,7 @@ export default async function LatestBlogs() {
         const fileContent = fs.readFileSync(filePath, "utf8");
         const { data } = matter(fileContent);
         const slug = file.replace(".md", "");
-        return { title: data.title as string, date: data.date as string, description: data.description as string, slug };
+        return { title: data.title as string, date: data.date as string, description: data.description as string, slug, tags: (data.tags as string[]) || [] };
     });
 
     // Sort by date descending (newest first)
@@ -49,9 +50,21 @@ export default async function LatestBlogs() {
                         <h3 className="text-lg font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-2">
                             {blog.title}
                         </h3>
-                        <p className="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2">
+                        <p className="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-3">
                             {blog.description}
                         </p>
+                        {blog.tags.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                                {blog.tags.map((tag) => (
+                                    <span
+                                        key={tag}
+                                        className="text-xs px-2 py-1 rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
                     </a>
                 ))}
             </div>

@@ -2,6 +2,7 @@
 title: "Markdown Syntax Guide"
 date: "2026-10-12"
 description: "A reference for all the markdown syntax you can use in blog posts."
+tags: ["markdown", "guide", "reference"]
 ---
 
 # Heading 1
