@@ -36,7 +36,7 @@ export default function LastFMCard() {
     }, [])
 
     return (
-        <section className="w-2/5">
+        <section className="w-full">
             <section className="flex flex-col w-full bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
                 <div className="flex items-center justify-between px-6 pt-4 pb-2">
                     <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">RECENT TRACKS</span>

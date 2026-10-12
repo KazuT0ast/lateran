@@ -16,15 +16,16 @@ export default function Home() {
       </section>
 
       <main className="flex p-10">
-        <section className="flex-1 flex flex-row items-center justify-center">
-          {/* <BlogPost slug="my-first-blog" /> */}
-          <LatestBlogs />
-        </section>
+        <section className="flex-1 flex border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden">
+          <section className="flex-1 p-10">
+            {/* <BlogPost slug="my-first-blog" /> */}
+            <LatestBlogs />
+          </section>
 
-        <section className="flex flex-1 w-full justify-end">
-          <LastFMCard />
+          <section className="w-2/5 p-10">
+            <LastFMCard />
+          </section>
         </section>
-
       </main>
 
     </section>
