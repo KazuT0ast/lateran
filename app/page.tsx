@@ -13,7 +13,7 @@ export default function Home() {
         <h1 className="text-4xl">Lateran</h1>
       </section>
 
-      <main className="flex-1 flex flex-row items-center justify-center p-4">
+      <main className="flex-1 flex flex-row items-center justify-center p-10">
         {/* <BlogPost slug="my-first-blog" /> */}
         <LatestBlogs />
       </main>

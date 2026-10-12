@@ -32,7 +32,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## 4. Design System & "Cozy Indie" Vibe
 - **Aesthetic:** Cozy, indie, personal workspace. NOT corporate SaaS.
 - **Background:** We use a subtle dot grid pattern defined in `globals.css`. NEVER add floating blurred blobs, heavy gradients, or complex background animations.
-- **Colors:** Use `zinc` for primary text and backgrounds (e.g., `text-zinc-900`, `bg-zinc-50`). Use `amber` for subtle accents (e.g., `text-amber-600`).
+- **Colors:** Use `zinc` for primary text and backgrounds (e.g., `text-zinc-900`, `bg-zinc-50`). Use `blue` for subtle accents (e.g., `text-blue-600`).
 - **Shapes:** Use rounded corners (`rounded-xl`, `rounded-2xl`) to keep things soft.
 - **Typography:** For any blog post or long-form text, ALWAYS wrap the content in a `<div className="prose prose-zinc dark:prose-invert">` to utilize the Tailwind Typography plugin. Do not manually style paragraphs inside blog posts.
 
