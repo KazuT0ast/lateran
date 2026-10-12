@@ -38,6 +38,17 @@ export default function LastFMCard() {
     return (
         <section className="w-2/5">
             <section className="flex flex-col w-full bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
+                <div className="flex items-center justify-between px-6 pt-4 pb-2">
+                    <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">RECENT TRACKS</span>
+                    <a
+                        href="https://www.last.fm/user/AzaKoast"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-500 dark:text-purple-400 text-xs font-medium tracking-wider hover:underline"
+                    >
+                        LAST.FM
+                    </a>
+                </div>
                 {tracks.map((track, index) => (
                     <a
                         key={index}
@@ -49,13 +60,10 @@ export default function LastFMCard() {
                     >
                         <div className="flex flex-col">
                             {index === 0 && track.nowPlaying && (
-                                <div className="flex items-center justify-between mb-2">
-                                    <span className="flex items-center gap-1 text-indigo-500 dark:text-indigo-400 text-xs font-medium">
-                                        <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse" />
-                                        Now Playing
-                                    </span>
-                                    <span className="text-purple-500 dark:text-purple-400 text-xs font-medium tracking-wider">LAST.FM</span>
-                                </div>
+                                <span className="flex items-center gap-1 text-indigo-500 dark:text-indigo-400 text-xs font-medium mb-2">
+                                    <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse" />
+                                    Now Playing
+                                </span>
                             )}
                             <div className="flex-1 min-w-0">
                                 <p className="font-medium truncate">{track.name}</p>
