@@ -68,7 +68,9 @@ export default function LastFMCard() {
                             <div className="flex-1 min-w-0">
                                 <p className="font-medium truncate">{track.name}</p>
                                 <p className="text-zinc-500 dark:text-zinc-400 truncate">{track.artist}</p>
-                                <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">{track.album}</p>
+                                {track.album && (
+                                    <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">{track.album}</p>
+                                )}
                             </div>
                         </div>
                     </a>
