@@ -36,7 +36,7 @@ export default async function LatestBlogs() {
             {/* <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
                 Latest Posts
             </h2> */}
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-full">
                 {latest.map((blog) => (
                     <a
                         key={blog.slug}

@@ -23,7 +23,7 @@ export function ThemeToggle() {
                 className="px-4 py-2 rounded-xl text-sm dark:bg-zinc-900 border dark:border-amber-50/10"
 
             >
-                {theme === "light" ? "☀️ Light" : "🌙 Dark"}
+                {theme === "light" ? "Light" : "Dark"}
             </button>
         </section>
     )

@@ -36,28 +36,32 @@ export default function LastFMCard() {
     }, [])
 
     return (
-        <section className="w-full ">
-            <section className="flex flex-col w-full gap-4 bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
+        <section className="w-2/5">
+            <section className="flex flex-col w-full bg-zinc-50 border dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
                 {tracks.map((track, index) => (
                     <a
                         key={index}
                         href={track.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group block p-6 rounded-2xl hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${index === 0 ? "text-lg" : "text-sm"
+                        className={`group block p-6 rounded-2xl hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${index === 0 ? "text-lg border-b dark:border-zinc-800" : "text-sm"
                             }`}
                     >
-                        <div className="flex items-center gap-3">
+                        <div className="flex flex-col">
+                            {index === 0 && track.nowPlaying && (
+                                <div className="flex items-center justify-between mb-2">
+                                    <span className="flex items-center gap-1 text-indigo-500 dark:text-indigo-400 text-xs font-medium">
+                                        <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse" />
+                                        Now Playing
+                                    </span>
+                                    <span className="text-purple-500 dark:text-purple-400 text-xs font-medium tracking-wider">LAST.FM</span>
+                                </div>
+                            )}
                             <div className="flex-1 min-w-0">
                                 <p className="font-medium truncate">{track.name}</p>
                                 <p className="text-zinc-500 dark:text-zinc-400 truncate">{track.artist}</p>
+                                <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">{track.album}</p>
                             </div>
-                            {index === 0 && (
-                                <span className="flex items-center gap-1 text-indigo-500 dark:text-indigo-400 text-xs font-medium">
-                                    <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse" />
-                                    Now Playing
-                                </span>
-                            )}
                         </div>
                     </a>
                 ))}

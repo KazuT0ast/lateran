@@ -21,7 +21,7 @@ export default function Home() {
           <LatestBlogs />
         </section>
 
-        <section>
+        <section className="flex flex-1 w-full justify-end">
           <LastFMCard />
         </section>
 
