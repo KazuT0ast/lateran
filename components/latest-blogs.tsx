@@ -38,11 +38,11 @@ export default async function LatestBlogs() {
                 <div className="px-6 pt-4 pb-2">
                     <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">RECENT BLOGS</span>
                 </div>
-                {latest.map((blog) => (
+                {latest.map((blog, index) => (
                     <a
                         key={blog.slug}
                         href={`/blog/${blog.slug}`}
-                        className="group block p-6 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200"
+                        className={`group block p-6 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${index < latest.length - 1 ? "border-b dark:border-zinc-800" : ""}`}
                     >
                         <time className="text-sm text-zinc-500 dark:text-zinc-400 mb-2 block">
                             {blog.date}
