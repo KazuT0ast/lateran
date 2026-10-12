@@ -33,9 +33,9 @@ export default async function LatestBlogs() {
 
     return (
         <section className="w-full">
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
+            {/* <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
                 Latest Posts
-            </h2>
+            </h2> */}
             <div className="flex flex-col w-1/2">
                 {latest.map((blog) => (
                     <a
