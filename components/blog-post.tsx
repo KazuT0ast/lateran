@@ -12,11 +12,18 @@ export default async function BlogPost({ slug }: { slug: string }) {
     const { data, content } = matter(fileContent);
 
     return (
-        <article className="prose prose-zinc dark:prose-invert max-w-none">
-            {/* The 'prose' class comes from the typography plugin and styles everything automatically! */}
-            <h1 className="text-4xl font-bold mb-2">{data.title}</h1>
-            <div className="flex items-center gap-4 mb-8">
-                <p className="text-sm text-zinc-500">{data.date}</p>
+        <article className="prose prose-zinc dark:prose-invert max-w-none bg-zinc-50 dark:bg-zinc-900 rounded-2xl">
+            {/* Header Section */}
+            <header className="px-6 pt-6 pb-4 mb-4 border-b-4 border-zinc-200 dark:border-zinc-800">
+                <time className="text-sm text-zinc-500 dark:text-zinc-400 mb-2 block">
+                    {data.date}
+                </time>
+                <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+                    {data.title}
+                </h1>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 -mt-1 mb-4">
+                    {data.description}
+                </p>
                 {(data.tags as string[])?.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                         {(data.tags as string[]).map((tag) => (
@@ -29,10 +36,13 @@ export default async function BlogPost({ slug }: { slug: string }) {
                         ))}
                     </div>
                 )}
-            </div>
+            </header>
 
-            {/* Render the Markdown */}
-            <ReactMarkdown>{content}</ReactMarkdown>
+            {/* Content Section */}
+            <section className="px-6 pb-6">
+                {/* The 'prose' class comes from the typography plugin and styles everything automatically! */}
+                <ReactMarkdown>{content}</ReactMarkdown>
+            </section>
         </article>
     );
 }
