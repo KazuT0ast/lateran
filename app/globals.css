@@ -84,3 +84,10 @@ body {
 .dark .expand-border-y::after {
   opacity: 0.3;
 }
+
+/* Constrain images inside blog posts */
+.prose img {
+  max-width: 50rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
