@@ -9,7 +9,7 @@ export default function Home() {
     <section className="w-full min-h-screen flex flex-col">
       <TopHeader />
 
-      <section className="w-3/4 mx-auto flex-1 flex flex-col items-center justify-center border-b border-zinc-200 dark:border-zinc-600">
+      <section className="w-3/4 mt-10 mx-auto flex-1 flex flex-col items-center justify-center border-y border-zinc-200 dark:border-zinc-600">
         <Image src="/Laterano.webp" alt="Lateran" width={300} height={300} />
         <h1 className="text-4xl">Lateran</h1>
         <p className="text-zinc-500 dark:text-zinc-400 mb-10">"Apple pie, with char siu!"</p>
