@@ -44,3 +44,43 @@ body {
   background-color: #18181b;
   background-image: radial-gradient(#3f3f46 1px, transparent 1px);
 }
+
+/* Border expand from center animation */
+@keyframes expandBorderX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.expand-border-y {
+  position: relative;
+}
+
+.expand-border-y::before,
+.expand-border-y::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.15;
+  animation: expandBorderX 1s ease-out forwards;
+  transform-origin: center;
+}
+
+.expand-border-y::before {
+  top: 0;
+}
+
+.expand-border-y::after {
+  bottom: 0;
+}
+
+.dark .expand-border-y::before,
+.dark .expand-border-y::after {
+  opacity: 0.3;
+}
