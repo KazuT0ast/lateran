@@ -40,3 +40,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Before making large changes, briefly explain your plan.
 - Make changes in small, logical chunks.
 - If you are unsure about a file's purpose, ask before modifying it.
+- After making changes, try to see if it builds with no errors before handing it off.
