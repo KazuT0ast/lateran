@@ -3,6 +3,16 @@ import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
+function CustomLink({ href, children, ...props }: { href?: string; children?: React.ReactNode }) {
+    return href ? (
+        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+            {children}
+        </a>
+    ) : (
+        <a {...props}>{children}</a>
+    );
+}
+
 export default async function BlogPost({ slug }: { slug: string }) {
     // 1. Find the file
     const filePath = path.join(process.cwd(), "./content/blog", `${slug}.md`);
@@ -41,7 +51,7 @@ export default async function BlogPost({ slug }: { slug: string }) {
             {/* Content Section */}
             <section className="px-6 pb-6">
                 {/* The 'prose' class comes from the typography plugin and styles everything automatically! */}
-                <ReactMarkdown>{content}</ReactMarkdown>
+                <ReactMarkdown components={{ a: CustomLink }}>{content}</ReactMarkdown>
             </section>
         </article>
     );

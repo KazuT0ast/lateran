@@ -50,3 +50,30 @@ Second, I would eventually blindly follow a Docker Compose for NextCloud where I
 But some good did come out of having Docker in general.
 
 #### Minecraft Server
+My very first service after installing Docker was to make a Minecraft Server that would allow my friends and I to play modpacks together, and it would be up 24/7 if anyone wanted to hop on at any time. One of our Modpacks we wanted to play was [Sunlit Valley](https://www.curseforge.com/minecraft/modpacks/society-sunlit-valley)
+
+
+services:  
+  mc:
+    image: itzg/minecraft-server:java17
+    container_name: sunlitvalley
+    restart: unless-stopped
+    environment:
+      EULA: "TRUE"
+      TYPE: "FORGE"
+      VERSION: "1.20.1"
+      SPAWN_PROTECTION: 0
+      ALLOW_FLIGHT: true
+      MEMORY: 7G
+      WHITELIST: |
+        -----
+        -----
+        -----
+        -----
+        -----
+      OPS: |
+        -----
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./sunlitvalley-data:/data

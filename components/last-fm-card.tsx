@@ -48,7 +48,7 @@ export default function LastFMCard() {
         </div>
     ))
 
-    const trackCards = tracks.map((track, index) => {
+    const trackCards = tracks.slice(0, 6).map((track, index) => {
         const isFirst = index === 0
         const classes = `group block p-6 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 transition-colors duration-200 ${isFirst ? "text-lg border-b dark:border-zinc-800" : "text-sm"}`
 

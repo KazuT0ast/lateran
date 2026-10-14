@@ -6,7 +6,7 @@ export async function GET() {
         return Response.json({ error: "Missing API credentials" }, { status: 500 });
     }
 
-    const limit = 5;
+    const limit = 7;
     const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastfmAccount}&api_key=${apiKey}&format=json&limit=${limit}`;
 
     try {
