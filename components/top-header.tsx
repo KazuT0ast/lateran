@@ -16,6 +16,8 @@ export default function TopHeader() {
             onClick={() => router.push("/")}
             src="/Laterano.webp" alt="Lateran" width={50} height={50} />
 
+            <a href="/music">Music</a>
+
             <ThemeToggle />
         </section>
     )
