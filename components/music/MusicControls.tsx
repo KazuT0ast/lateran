@@ -38,14 +38,14 @@ export default function MusicControls({
         value={search}
         onChange={(e) => onSearchChange(e.target.value)}
         placeholder="Search albums or artists…"
-        className="flex-1 min-w-0 rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-4 py-2 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600"
+        className="flex-1 min-w-0 rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-4 py-2 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600/80"
       />
 
       <div className="flex gap-3">
         <select
           value={category}
           onChange={(e) => onCategoryChange(e.target.value)}
-          className="rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-3 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600"
+          className="rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-3 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600/80"
         >
           {categories.map((cat) => (
             <option key={cat} value={cat}>
@@ -57,7 +57,7 @@ export default function MusicControls({
         <select
           value={sort}
           onChange={(e) => onSortChange(e.target.value as SortKey)}
-          className="rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-3 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600"
+          className="rounded-xl border border-zinc-300/60 dark:border-zinc-700/60 bg-zinc-100 dark:bg-zinc-900 px-3 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-600/80"
         >
           {SORT_OPTIONS.map((opt) => (
             <option key={opt.value} value={opt.value}>

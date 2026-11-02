@@ -18,13 +18,13 @@ export default function MusicPage() {
                     <section className="flex w-full gap-10">
                         <section
                         onClick={() => router.push("/music/catalog")} 
-                        className="flex h-30 w-full justify-center items-center bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-800 rounded-2xl cursor-pointer">
+                        className="flex h-30 w-full justify-center items-center dark:bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-200 dark:border-zinc-800 rounded-2xl cursor-pointer">
                             <p>Jellyfin Music</p>
                         </section>
-                        <section className="flex h-30 w-full justify-center items-center bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-800 rounded-2xl cursor-pointer">
+                        <section className="flex h-30 w-full justify-center items-center dark:bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-200 dark:border-zinc-800 rounded-2xl cursor-pointer">
                             <p>Catalog2</p>
                         </section>
-                        <section className="flex h-30 w-full justify-center items-center bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-800 rounded-2xl cursor-pointer">
+                        <section className="flex h-30 w-full justify-center items-center dark:bg-zinc-900 hover:bg-indigo-600/50 dark:hover:bg-indigo-500/50 border border-zinc-200 dark:border-zinc-800 rounded-2xl cursor-pointer">
                             <p>Catalog3</p>
                         </section>
                     </section>

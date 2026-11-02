@@ -43,7 +43,7 @@ export default function MusicCatalog() {
 
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState<SortKey>("year-desc");
-  const [category, setCategory] = useState(categories[0] ?? "");
+  const [category, setCategory] = useState("All");
 
   const allAlbums = useMemo(() => {
     const flattened = categories.flatMap((cat) => data[cat] ?? []);
@@ -94,7 +94,7 @@ export default function MusicCatalog() {
           if (albums.length === 0) return null;
           return (
             <div key={cat}>
-              <h2 className="mb-4 border-b-2 border-zinc-300 dark:border-zinc-600 pb-2 text-lg font-medium text-zinc-700 dark:text-zinc-300">
+              <h2 className="mb-4 border-b-4 border-zinc-200 dark:border-zinc-800 pb-2 text-lg font-medium text-zinc-700 dark:text-zinc-300">
                 {cat}
               </h2>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
