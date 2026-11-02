@@ -1,6 +1,7 @@
 import TopHeader from "@/components/top-header";
 import MusicCatalog from "@/components/music/MusicCatalog";
 
+// Do sorting mechanics later, like artist, date, idk
 export default function CatalogPage() {
   return (
     <section className="w-full min-h-screen flex flex-col">

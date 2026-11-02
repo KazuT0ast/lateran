@@ -41,6 +41,17 @@
       "image_tag": "da9ecf3af308999dffa282998e2235b9"
     },
     {
+      "id": "1e86605e3266ea74b03a24709cf2277c",
+      "title": "A Necessary Message",
+      "artist": "塞壬唱片-MSR",
+      "artists": [
+        "塞壬唱片-MSR"
+      ],
+      "year": 2026,
+      "genres": [],
+      "image_tag": "4a23581860607b06a8073e415382fa79"
+    },
+    {
       "id": "a08e1b860c02107383d13321f0927c3d",
       "title": "Not My Paradiso",
       "artist": "Mili",
@@ -357,6 +368,19 @@
       "image_tag": "d7033f5ff5dc0174eac5de922f5eed95"
     },
     {
+      "id": "51c3ac55d2544cb07f838ac9b7d47729",
+      "title": "Carbonated Love",
+      "artist": "IRyS",
+      "artists": [
+        "IRyS"
+      ],
+      "year": 2024,
+      "genres": [
+        "VTuber"
+      ],
+      "image_tag": "04e49b15a9e0c867792e4971bd7f7d4b"
+    },
+    {
       "id": "5f81c28b7431f5f5ec77ad1bb3a244ad",
       "title": "Echoism",
       "artist": "塞壬唱片-MSR",
@@ -393,6 +417,31 @@
         "World"
       ],
       "image_tag": "a0ef45e490e065940ba47226b137edce"
+    },
+    {
+      "id": "613966f3571782aa3d4899f495337bf3",
+      "title": "hololive English Eurobeat Remix Album",
+      "artist": "Mori Calliope",
+      "artists": [
+        "Mori Calliope",
+        "Hakos Baelz",
+        "FUWAMOCO, Fuwawa Abyssgard, Mococo Abyssgard",
+        "Ouro Kronii",
+        "小鳥遊キアラ",
+        "IRyS",
+        "Nanashi Mumei",
+        "一伊那尓栖",
+        "Ceres Fauna",
+        "hololive English -Advent-",
+        "Watson Amelia",
+        "Nerissa Ravencroft",
+        "hololive English -Justice-"
+      ],
+      "year": 2024,
+      "genres": [
+        "VTuber"
+      ],
+      "image_tag": "9dc50fff238de460499f0483baee5966"
     },
     {
       "id": "863db8b85f172fe84f1ac1197f9d4af8",
@@ -680,7 +729,7 @@
       ],
       "year": 2022,
       "genres": [],
-      "image_tag": "1218ea75028aa5717b945bc814dc9258"
+      "image_tag": "f44730970a39bf07887216c277ed606c"
     },
     {
       "id": "de5723fbd1ae62d2c32979b64665543d",
@@ -743,6 +792,19 @@
         "J-Pop"
       ],
       "image_tag": "2ab57d830ad4ccabc7c943b8e7502796"
+    },
+    {
+      "id": "6664054eac37131da3c22cb30bc1545b",
+      "title": "Let Me Stay Here",
+      "artist": "Ceres Fauna",
+      "artists": [
+        "Ceres Fauna"
+      ],
+      "year": 2022,
+      "genres": [
+        "VTuber"
+      ],
+      "image_tag": "ef5fad4892fc423045cb68034c202c46"
     },
     {
       "id": "09f68c130b3af8178311ba8e1f8b557a",
@@ -879,7 +941,7 @@
       ],
       "year": 2021,
       "genres": [],
-      "image_tag": "7cf4bdfa848922f865dec7cde228316b"
+      "image_tag": "15a4f0a2fc1b11ccb733e364c35dc8fd"
     },
     {
       "id": "5c4316eee19c944c2dac80d9f263d746",
@@ -4476,6 +4538,22 @@
       "year": 2015,
       "genres": [],
       "image_tag": "e9d1d25472be6f9ffc2c3c6cdf999804"
+    },
+    {
+      "id": "043ef5afe79846f76863e34dad72d4b5",
+      "title": "Precious Ray",
+      "artist": "野宮あゆみ",
+      "artists": [
+        "野宮あゆみ",
+        "小宮真央",
+        "REDALiCE",
+        "t+pazolite",
+        "yukacco",
+        "nachi"
+      ],
+      "year": 2015,
+      "genres": [],
+      "image_tag": "937d0b84cf180232ff2fad063c65fbf9"
     },
     {
       "id": "f5fefb23567c142301279fc461ec177b",

@@ -14,6 +14,7 @@ export default function MusicPage() {
                 <section className="p-10 flex-1 flex border border-zinc-200 dark:border-zinc-800 rounded-2xl">
                     {/* Dashboard sections will go here */}
                     {/* - Catalog */}
+                    {/* can make these into components later possibly */}
                     <section className="flex w-full gap-10">
                         <section
                         onClick={() => router.push("/music/catalog")} 
